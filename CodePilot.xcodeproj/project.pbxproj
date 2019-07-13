@@ -64,9 +64,8 @@
 		4BEE526C1339193600DA9881 /* MCStringScoring.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B63C9261190199500C0DB12 /* MCStringScoring.c */; };
 		4BEE526E1339193600DA9881 /* CPSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC547911D7757D00C63705 /* CPSymbol.m */; };
 		4BEE52741339193600DA9881 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
-		4BEE52751339193600DA9881 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B71F65C11561A15005A8471 /* libssl.dylib */; };
-		4BEE52761339193600DA9881 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B71F66011561A5E005A8471 /* libcrypto.dylib */; };
 		4BEE52771339193600DA9881 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B25285A1165E23700374EB0 /* WebKit.framework */; };
+		7C05CBEE22DA8A7000910745 /* libboringssl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C05CBED22DA8A7000910745 /* libboringssl.tbd */; };
 		C79122D6189E3449001776A1 /* NSURL+Xcode.m in Sources */ = {isa = PBXBuildFile; fileRef = C79122D5189E3449001776A1 /* NSURL+Xcode.m */; };
 		C79122D9189E391D001776A1 /* NSWorkspace+OpenFileOnLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C79122D8189E391D001776A1 /* NSWorkspace+OpenFileOnLine.m */; };
 		F93F4FAD17B3FE550077B19E /* NSColor+ColorArithmetic.m in Sources */ = {isa = PBXBuildFile; fileRef = F93F4FAC17B3FE550077B19E /* NSColor+ColorArithmetic.m */; };
@@ -197,6 +196,7 @@
 		4BEB7734138E466D00D52605 /* CPResultScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = CPResultScrollView.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4BEE527B1339193600DA9881 /* CodePilot3.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePilot3.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BEE52A513391CBF00DA9881 /* CPCodePilotConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CPCodePilotConfig.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7C05CBED22DA8A7000910745 /* libboringssl.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libboringssl.tbd; path = usr/lib/libboringssl.tbd; sourceTree = SDKROOT; };
 		C79122D4189E3449001776A1 /* NSURL+Xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Xcode.h"; sourceTree = "<group>"; };
 		C79122D5189E3449001776A1 /* NSURL+Xcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Xcode.m"; sourceTree = "<group>"; };
 		C79122D7189E391D001776A1 /* NSWorkspace+OpenFileOnLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+OpenFileOnLine.h"; sourceTree = "<group>"; };
@@ -217,9 +217,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C05CBEE22DA8A7000910745 /* libboringssl.tbd in Frameworks */,
 				4BEE52741339193600DA9881 /* Cocoa.framework in Frameworks */,
-				4BEE52751339193600DA9881 /* libssl.dylib in Frameworks */,
-				4BEE52761339193600DA9881 /* libcrypto.dylib in Frameworks */,
 				4BEE52771339193600DA9881 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +234,7 @@
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
+				7C05CBEC22DA8A7000910745 /* Frameworks */,
 			);
 			indentWidth = 2;
 			name = CodePilot;
@@ -502,6 +502,14 @@
 			);
 			name = "3rd party";
 			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		7C05CBEC22DA8A7000910745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C05CBED22DA8A7000910745 /* libboringssl.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
