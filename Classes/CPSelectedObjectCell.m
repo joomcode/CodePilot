@@ -11,6 +11,8 @@
 #import "NSView+RoundedFrame.h"
 
 @implementation CPSelectedObjectCell
+@synthesize cellSize = _cellSize;
+
 - (id)init
 {
 	self = [super init];
