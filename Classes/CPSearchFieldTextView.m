@@ -39,7 +39,7 @@ enum {
   // we record key as pressed unless it has cmd pressed with it as well.
   // cmd-backspace for example doesn't cause keyUp to be called later on,
   // so we're left with someKeyIsDown set for the true until the next KeyDown
-  if (![theEvent modifierFlags] & NSCommandKeyMask) {
+  if (!([theEvent modifierFlags] & NSCommandKeyMask)) {
     self.someKeyIsDown = YES;
   }
   
