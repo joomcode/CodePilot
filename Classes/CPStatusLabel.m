@@ -9,7 +9,7 @@
 #import "CPStatusLabel.h"
 
 @implementation CPStatusLabel
-- (id)initWithFrame:(NSRect)frameRect
+- (instancetype)initWithFrame:(NSRect)frameRect
 {
 	self = [super initWithFrame:frameRect];
   

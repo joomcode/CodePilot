@@ -23,7 +23,7 @@ static NSString * const IDEIndexWillIndexWorkspaceNotification = @"IDEIndexWillI
 static NSString * const IDEIndexDidIndexWorkspaceNotification = @"IDEIndexDidIndexWorkspaceNotification";
 
 @implementation CPXcodeWrapper
-- (id)init
+- (instancetype)init
 {
   self = [super init];
   

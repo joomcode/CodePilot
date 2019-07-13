@@ -10,7 +10,7 @@
 #import "CPPreferencesView.h"
 
 @implementation CPPreferencesViewController
-- (id)init
+- (instancetype)init
 {
   self = [super init];
   

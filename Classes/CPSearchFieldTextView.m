@@ -17,7 +17,7 @@ enum {
 };
 
 @implementation CPSearchFieldTextView
-- (id)init
+- (instancetype)init
 {
 	self = [super init];
   

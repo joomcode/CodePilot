@@ -13,7 +13,7 @@
 @interface CPPreferencesToolbarDelegate : NSObject<NSToolbarDelegate>
 + (CPPreferencesToolbarDelegate *)preferencesToolbarDelegateByInterceptingDelegateOfToolbar:(NSToolbar *)toolbar;
 
-- (id)initWithOriginalToolbarDelegate:(IDEPreferencesController *)_originalDelegate toolbar:(NSToolbar *)toolbar;
+- (instancetype)initWithOriginalToolbarDelegate:(IDEPreferencesController *)_originalDelegate toolbar:(NSToolbar *)toolbar;
 - (void)prepareToolbarItem;
 - (void)ourItemWasSelected:(id)sender;
 @end

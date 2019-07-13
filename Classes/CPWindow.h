@@ -18,7 +18,7 @@
 
 - (void)updateFrameWithViewRequirementsWithAnimation:(BOOL)animation;
 - (void)updateFrameWithViewRequirements;
-- (id)initWithDefaultSettings;
+- (instancetype)initWithDefaultSettings;
 - (void)firstRunOrderFront;
 - (NSScreen *)destinationScreen;
 @end

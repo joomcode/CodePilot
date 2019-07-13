@@ -18,7 +18,7 @@
 @property (nonatomic, assign) BOOL ourWindowIsOpen;
 @property (nonatomic, strong) CPSearchFieldTextView *searchFieldTextEditor;
 
-- (id)initWithXcodeWrapper:(CPXcodeWrapper *)xcodeWrapper;
+- (instancetype)initWithXcodeWrapper:(CPXcodeWrapper *)xcodeWrapper;
 
 - (void)openWindow;
 - (void)hideWindow;

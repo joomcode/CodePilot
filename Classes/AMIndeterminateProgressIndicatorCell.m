@@ -26,7 +26,7 @@
 
 @implementation AMIndeterminateProgressIndicatorCell
 
-- (id)init
+- (instancetype)init
 {
 	if ((self = [super initImageCell:nil])) {
 		[self setAnimationDelay:5.0/60.0];

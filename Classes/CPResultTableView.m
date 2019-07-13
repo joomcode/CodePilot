@@ -12,7 +12,7 @@
 #import "CPResultTableViewColumn.h"
 
 @implementation CPResultTableView
-- (id)initWithFrame:(NSRect)frameRect
+- (instancetype)initWithFrame:(NSRect)frameRect
 {
 	self = [super initWithFrame:frameRect];
   

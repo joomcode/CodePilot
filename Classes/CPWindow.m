@@ -15,7 +15,7 @@
 #import "CPXcodeWrapper.h"
 
 @implementation CPWindow
-- (id)initWithDefaultSettings
+- (instancetype)initWithDefaultSettings
 {
 	return [[CPWindow alloc] initWithContentRect:NSMakeRect(100, 100, WINDOW_WIDTH, 500)
                                      styleMask:NSTitledWindowMask
@@ -23,7 +23,7 @@
                                          defer:0];
 }
 
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
+- (instancetype)initWithContentRect:(NSRect)contentRect styleMask:(NSWindowStyleMask)aStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)flag
 {
 	self = [super initWithContentRect:contentRect
                           styleMask:NSBorderlessWindowMask

@@ -13,7 +13,7 @@
 @implementation CPSelectedObjectCell
 @synthesize cellSize = _cellSize;
 
-- (id)init
+- (instancetype)init
 {
 	self = [super init];
   

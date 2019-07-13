@@ -13,7 +13,7 @@
 #import <Carbon/Carbon.h>
 
 @implementation CPInfoWindowView
-- (id)initWithFrame:(NSRect)frame
+- (instancetype)initWithFrame:(NSRect)frame
 {
   self = [super initWithFrame:frame];
   

@@ -39,7 +39,7 @@ static NSString * const SelectedItemIdentifierKeyPath = @"selectedItemIdentifier
   return toolbarDelegate;
 }
 
-- (id)initWithOriginalToolbarDelegate:(IDEPreferencesController *)originalDelegate toolbar:(NSToolbar *)toolbar
+- (instancetype)initWithOriginalToolbarDelegate:(IDEPreferencesController *)originalDelegate toolbar:(NSToolbar *)toolbar
 {
   self = [super init];
   

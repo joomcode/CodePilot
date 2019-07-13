@@ -22,7 +22,7 @@
 #import "AMIndeterminateProgressIndicatorCell.h"
 
 @implementation CPSearchController
-- (id)init
+- (instancetype)init
 {
 	self = [super init];
   

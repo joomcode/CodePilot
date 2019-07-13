@@ -15,7 +15,7 @@
 #import "CPSymbol.h"
 
 @implementation CPResultTableViewColumn
-- (id)init
+- (instancetype)init
 {
 	self = [super init];
   

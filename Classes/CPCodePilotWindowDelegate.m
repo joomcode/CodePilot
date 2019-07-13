@@ -18,7 +18,7 @@
 #import "CPSearchFieldTextView.h"
 
 @implementation CPCodePilotWindowDelegate
-- (id)initWithXcodeWrapper:(CPXcodeWrapper *)xcodeWrapper
+- (instancetype)initWithXcodeWrapper:(CPXcodeWrapper *)xcodeWrapper
 {
 	self = [super init];
   

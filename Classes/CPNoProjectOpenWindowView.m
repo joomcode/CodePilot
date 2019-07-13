@@ -10,7 +10,7 @@
 #import "CPCodePilotConfig.h"
 
 @implementation CPNoProjectOpenWindowView
-- (id)initWithFrame:(NSRect)frame
+- (instancetype)initWithFrame:(NSRect)frame
 {
   self = [super initWithFrame:frame];
   

@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSButton *autocopyingSelectionCheckbox;
 @property (nonatomic, strong) NSButton *externalEditorCheckbox;
 
-- (id)initWithPreferredFrame;
+- (instancetype)initWithPreferredFrame;
 
 + (CGFloat)preferredWidth;
 + (CGFloat)preferredHeight;

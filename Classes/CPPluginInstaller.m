@@ -23,7 +23,7 @@ static NSString * const IDEKeyBindingSetDidActivateNotification = @"IDEKeyBindin
   LOG(@"%@ %@ Plugin successfully installed.", PRODUCT_NAME, PRODUCT_CURRENT_VERSION);
 }
 
-- (id)init
+- (instancetype)init
 {
   self = [super init];
   

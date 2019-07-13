@@ -17,12 +17,12 @@ static const CGFloat RightSideWidth = 420;
 static const CGFloat TextHeight = 16;
 
 @implementation CPPreferencesView
-- (id)initWithPreferredFrame
+- (instancetype)initWithPreferredFrame
 {
   return [self initWithFrame:NSMakeRect(0.0f, 0.0f, PreferredViewWidth, PreferredViewHeight)];
 }
 
-- (id)initWithFrame:(NSRect)frame
+- (instancetype)initWithFrame:(NSRect)frame
 {
   self = [super initWithFrame:frame];
   
