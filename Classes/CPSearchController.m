@@ -19,6 +19,7 @@
 #import "CPStatusLabel.h"
 #import "CPSymbol.h"
 #import "CPResult.h"
+#import "AMIndeterminateProgressIndicatorCell.h"
 
 @implementation CPSearchController
 - (id)init
